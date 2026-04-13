@@ -33,6 +33,5 @@ for tx in transfers.get('result', {}).get('in', []):
     count += 1
 conn.commit(); conn.close()
 msg = f"[{dt.datetime.now().isoformat(timespec='seconds')}] payment_watch: balance={bal.get('result', {}).get('balance')} detected={count}"
-log.open('a', encoding='utf-8').write(msg + '
-')
+log.open('a', encoding='utf-8').write(msg + '\n')
 print(msg)
