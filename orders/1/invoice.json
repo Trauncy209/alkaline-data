@@ -3,8 +3,17 @@
   "sku": "local-opportunity-snapshot",
   "name": "Local Opportunity Snapshot",
   "email": "test@example.com",
-  "amount_xmr": 0.010001,
+  "amount_xmr": "0.010001000000",
   "address": "8Bz66koGn7Wa9QqyYK17QXCKKNjrdyGYMZ74PnGhK6SffmMqiM3mjDTc9MXdYTEVjj3FXnZV8qePo1akR63PmfqiF9MchEV",
-  "status": "invoice_created",
-  "created_at": "2026-04-13T17:30:02.471071+00:00"
+  "address_index": null,
+  "delivery_path": "/datasets/opportunity-snapshot-2026-04-13.csv",
+  "delivery_url": "/datasets/opportunity-snapshot-2026-04-13.csv",
+  "confirmations_required": 10,
+  "status": "delivered",
+  "payment_txid": null,
+  "confirmed_at": "2026-04-13T17:30:02.471071+00:00",
+  "delivered_at": "2026-04-13T17:35:02.471071+00:00",
+  "order_url": "/orders/1/",
+  "created_at": "2026-04-13T17:30:02.471071+00:00",
+  "updated_at": "2026-04-13T17:35:02.471071+00:00"
 }

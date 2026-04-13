@@ -3,29 +3,52 @@ layout: default
 title: Alkaline Data
 ---
 
-<p class="eyebrow">Digital products</p>
-<h1>Alkaline Data</h1>
-<p class="muted">A small catalog of useful downloads with privacy-friendly Monero checkout and simple delivery.</p>
-
-<section class="grid">
-  {% for item in site.data.catalog %}
-  <article class="product">
-    <div class="meta"><span class="pill">{{ item.format }}</span><span class="pill">{{ item.delivery_method }}</span></div>
-    <h2>{{ item.name }}</h2>
-    <p>{{ item.description }}</p>
-    <p class="muted">{{ item.sample }}</p>
-    <p><strong>{{ item.price_xmr }} XMR</strong></p>
-    <a class="btn" href="{{ '/checkout/' | relative_url }}#{{ item.sku }}">Buy / request invoice</a>
-  </article>
-  {% endfor %}
+<section class="hero">
+  <p class="eyebrow">Direct buyer flow</p>
+  <h1>Pick a product. Pay XMR. Unlock the download.</h1>
+  <p class="lead">A dead-simple storefront for digital products with a local Monero invoice flow, clear order states, and automatic delivery once payment confirms.</p>
+  <div class="hero-actions">
+    <a class="btn" href="{{ '/checkout/' | relative_url }}">Go to checkout</a>
+    <a class="btn btn-secondary" href="#catalog">Browse products</a>
+  </div>
 </section>
 
-<section class="card" style="margin-top:24px;">
-  <h2>How checkout works</h2>
-  <ol>
-    <li>Pick a product.</li>
-    <li>Create an invoice with the local order script.</li>
-    <li>Pay the unique XMR amount.</li>
-    <li>The watcher confirms payment and marks the order ready for delivery.</li>
+<section class="steps card">
+  <div>
+    <p class="eyebrow">How it works</p>
+    <h2>One obvious path from product page to delivery</h2>
+  </div>
+  <ol class="timeline">
+    <li><strong>1. View product</strong><span>Read the page, choose the item, and open the invoice form.</span></li>
+    <li><strong>2. Pay XMR</strong><span>Create a local order, send the exact invoice amount, and wait for confirmations.</span></li>
+    <li><strong>3. Auto-delivery unlocks</strong><span>The watcher marks the order paid and reveals the download link on the order page.</span></li>
   </ol>
+</section>
+
+<section id="catalog" class="stack">
+  <div>
+    <p class="eyebrow">Catalog</p>
+    <h2>Available downloads</h2>
+  </div>
+  <div class="grid">
+    {% for item in site.data.catalog %}
+    <article class="product">
+      <div class="meta">
+        <span class="pill">{{ item.format }}</span>
+        <span class="pill">{{ item.delivery_method }}</span>
+      </div>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+      <p class="muted">{{ item.sample }}</p>
+      <div class="price-row">
+        <strong>{{ item.price_xmr }} XMR</strong>
+        <span class="muted">Exact invoice amount is generated per order.</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn" href="{{ '/products/' | append: item.sku | append: '/' | relative_url }}">View product</a>
+        <a class="btn btn-secondary" href="{{ '/checkout/' | relative_url }}#{{ item.sku }}">Buy now</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 </section>

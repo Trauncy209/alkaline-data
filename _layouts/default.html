@@ -1,2 +1,28 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{{ page.title | default: site.title }}</title><meta name="description" content="{{ site.description }}"><link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}"></head><body><header class="site-header"><div class="wrap header-inner"><a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a><nav class="nav"><a href="{{ '/' | relative_url }}">Catalog</a><a href="{{ '/checkout/' | relative_url }}">Checkout</a></nav></div></header><main class="wrap">{{ content }}</main><footer class="site-footer wrap"><span>Monero checkout. Plain and simple.</span></footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}">Catalog</a>
+          <a href="{{ '/checkout/' | relative_url }}">Checkout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">{{ content }}</main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>Monero checkout with a plain buyer flow.</span>
+        <span>Product page → pay XMR → confirm → delivery link.</span>
+      </div>
+    </footer>
+  </body>
+</html>

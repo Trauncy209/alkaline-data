@@ -1,0 +1,4 @@
+tool_type,example,tradeoff,fit
+browser,Firefox hardened profile,More setup than stock browsers,Best default for most buyers
+messaging,Signal,Requires phone number,Easy privacy upgrade for normal users
+passwords,Bitwarden,Cloud sync dependency,Strong password hygiene with low friction

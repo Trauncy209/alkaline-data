@@ -1,11 +1,38 @@
 ---
 layout: default
-title: Invoice 1
+title: Order #1 — Local Opportunity Snapshot
 permalink: /orders/1/
 ---
 
-<h1>Invoice 1</h1>
-<p><strong>Local Opportunity Snapshot</strong></p>
-<p>Send exactly <strong>0.010001 XMR</strong> to:</p>
-<p><code>8Bz66koGn7Wa9QqyYK17QXCKKNjrdyGYMZ74PnGhK6SffmMqiM3mjDTc9MXdYTEVjj3FXnZV8qePo1akR63PmfqiF9MchEV</code></p>
-<p class="muted">After payment confirms, the watcher will mark the order paid and release delivery.</p>
+<section class="hero">
+  <p class="eyebrow">Order #1</p>
+  <h1>Local Opportunity Snapshot</h1>
+  <p class="lead">Delivered. The payment is confirmed and the download link is unlocked below.</p>
+</section>
+
+<section class="card">
+  <div class="meta">
+    <span class="pill">CSV + JSON</span>
+    <span class="pill">instant download</span>
+    <span class="pill">Delivered</span>
+  </div>
+  <div class="order-card-head">
+    <div>
+      <h2>Download ready</h2>
+      <p class="muted">The order has cleared and the delivery link is live.</p>
+    </div>
+    <strong>0.010001000000 XMR</strong>
+  </div>
+  <p><a class="btn" href="/datasets/opportunity-snapshot-2026-04-13.csv">Download your file</a></p>
+</section>
+
+<section class="stack" style="margin-top:16px;">
+  <article class="card">
+    <h2>Payment</h2>
+    <p>Payment confirmed through the local Monero wallet RPC.</p>
+  </article>
+  <article class="card">
+    <h2>Delivery path</h2>
+    <p><code>/datasets/opportunity-snapshot-2026-04-13.csv</code></p>
+  </article>
+</section>
