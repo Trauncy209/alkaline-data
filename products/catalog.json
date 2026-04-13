@@ -1,0 +1,20 @@
+[
+  {
+    "sku": "local-opportunity-snapshot",
+    "name": "Local Opportunity Snapshot",
+    "price_xmr": 0.01,
+    "description": "A compact CSV/JSON pack of find-and-verify opportunity leads."
+  },
+  {
+    "sku": "budget-hardware-tracker",
+    "name": "Budget Hardware Tracker",
+    "price_xmr": 0.015,
+    "description": "A curated dataset of budget PC and homelab hardware pricing ideas."
+  },
+  {
+    "sku": "privacy-tools-matrix",
+    "name": "Privacy Tools Matrix",
+    "price_xmr": 0.012,
+    "description": "A comparison table of privacy tools, tradeoffs, and recommended use cases."
+  }
+]

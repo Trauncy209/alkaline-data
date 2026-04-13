@@ -1,0 +1,8 @@
+{
+  "rpc_url": "http://127.0.0.1:18083/json_rpc",
+  "wallet_address": "433B6VNHetXVEJnrrHKbvMWPYV84mEKkARFyWJ7tHhFVhJBqj3msrTtRyR7NDFURtvZj7HnKDwQWGcfHUVYfpRyfMcN5nmT",
+  "stream_name": "Data Products",
+  "confirmations": 10,
+  "poll_seconds": 60,
+  "database": "/home/Alkaline/alkaline-business/db/earnings.sqlite3"
+}
