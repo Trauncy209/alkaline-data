@@ -1,0 +1,29 @@
+[
+  {
+    "sku": "local-opportunity-snapshot",
+    "name": "Local Opportunity Snapshot",
+    "price_xmr": 0.01,
+    "delivery_method": "download",
+    "format": "CSV + JSON",
+    "description": "A compact pack of find-and-verify opportunity leads with notes and sourcing fields.",
+    "sample": "Fresh lead list for local buyer intent and budget-friendly follow-up."
+  },
+  {
+    "sku": "budget-hardware-tracker",
+    "name": "Budget Hardware Tracker",
+    "price_xmr": 0.015,
+    "delivery_method": "download",
+    "format": "CSV + notes",
+    "description": "A pricing tracker for budget PC parts, homelab gear, and used hardware ideas.",
+    "sample": "Useful if you want a quick shortlist before buying or flipping gear."
+  },
+  {
+    "sku": "privacy-tools-matrix",
+    "name": "Privacy Tools Matrix",
+    "price_xmr": 0.012,
+    "delivery_method": "download",
+    "format": "PDF + spreadsheet",
+    "description": "A comparison grid of privacy tools, tradeoffs, and recommended use cases.",
+    "sample": "Simple selection guide for normal people, not security obsessives."
+  }
+]
