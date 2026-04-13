@@ -5,9 +5,9 @@ permalink: /checkout/
 ---
 
 <section class="hero">
-  <p class="eyebrow">Checkout</p>
-  <h1>Invoice first, then pay XMR, then unlock delivery.</h1>
-  <p class="lead">This page removes the guesswork: choose a product, create a local invoice, send the exact Monero amount, and wait for the watcher to confirm the payment.</p>
+  <p class="eyebrow">Checkout paused</p>
+  <h1>Buying is on hold while the offer is simplified.</h1>
+  <p class="lead">The order code remains in place, but checkout is paused so we can avoid sending buyers into a confusing or premature purchase flow.</p>
 </section>
 
 <section class="card">

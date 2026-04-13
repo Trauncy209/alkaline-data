@@ -13,6 +13,8 @@ BASE = Path(__file__).resolve().parents[1]
 ROOT = BASE.parent.parent
 DB_PATH = ROOT / 'db' / 'earnings.sqlite3'
 CONFIG = json.loads((BASE / 'config' / 'payment.json').read_text(encoding='utf-8'))
+if not CONFIG.get('enabled', True):
+    raise SystemExit(CONFIG.get('paused_reason', 'Storefront is paused.'))
 CATALOG = json.loads((BASE / '_data' / 'catalog.json').read_text(encoding='utf-8'))
 
 STATUS_COPY = {

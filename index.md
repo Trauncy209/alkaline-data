@@ -4,13 +4,9 @@ title: Alkaline Data
 ---
 
 <section class="hero">
-  <p class="eyebrow">Direct buyer flow</p>
-  <h1>Pick a product. Pay XMR. Unlock the download.</h1>
-  <p class="lead">A dead-simple storefront for digital products with a local Monero invoice flow, clear order states, and automatic delivery once payment confirms.</p>
-  <div class="hero-actions">
-    <a class="btn" href="{{ '/checkout/' | relative_url }}">Go to checkout</a>
-    <a class="btn btn-secondary" href="#catalog">Browse products</a>
-  </div>
+  <p class="eyebrow">Store paused</p>
+  <h1>We are simplifying the offer before we sell again.</h1>
+  <p class="lead">The storefront and payment flow are temporarily paused while the products, wording, and delivery experience are tightened up. The wallet and order code still exist, but the front end is no longer pushing buyers into a confusing flow.</p>
 </section>
 
 <section class="steps card">

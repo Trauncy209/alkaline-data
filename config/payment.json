@@ -4,5 +4,7 @@
   "stream_name": "Data Products",
   "confirmations": 10,
   "poll_seconds": 60,
-  "database": "/home/Alkaline/alkaline-business/db/earnings.sqlite3"
+  "database": "/home/Alkaline/alkaline-business/db/earnings.sqlite3",
+  "enabled": false,
+  "paused_reason": "Storefront temporarily paused while the offer and checkout flow are simplified."
 }

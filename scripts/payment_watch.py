@@ -9,6 +9,8 @@ import urllib.request
 BASE = Path(__file__).resolve().parents[1]
 ROOT = BASE.parent.parent
 CONFIG = json.loads((BASE / 'config' / 'payment.json').read_text(encoding='utf-8'))
+if not CONFIG.get('enabled', True):
+    raise SystemExit(CONFIG.get('paused_reason', 'Storefront is paused.'))
 CATALOG = {item['sku']: item for item in json.loads((BASE / '_data' / 'catalog.json').read_text(encoding='utf-8'))}
 LOG_DIR = ROOT / 'logs'
 LOG_DIR.mkdir(parents=True, exist_ok=True)
